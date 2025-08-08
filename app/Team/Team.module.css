@@ -1,0 +1,935 @@
+/* Global styles to prevent horizontal scroll */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  max-width: 1440px;
+  height: 100vh;
+  min-height: 1024px;
+  background-color: #f9fafb;
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.navbarWrapper {
+  width: 260px;
+  min-width: 260px;
+  max-width: 260px;
+  height: 100vh;
+  min-height: 1024px;
+  flex-shrink: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.mainContent {
+  flex: 1 1 auto;
+  width: 100%;
+  max-width: 1180px;
+  height: 100vh;
+  min-height: 1024px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.header {
+  width: 100%;
+  height: 90px;
+  min-height: 90px;
+  max-height: 90px;
+  background-color: white;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  flex-shrink: 0;
+
+  overflow-x:visible;
+}
+
+.headerContent {
+  width: 100%;
+  max-width: 1132px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0 24px;
+}
+
+.headerTitle {
+  font-size: 32px;
+  font-weight: 600;
+  color: #111827;
+  margin: 0;
+  flex-shrink: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.createTicketBtn {
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.createTicketBtn:hover {
+  background-color: #374151;
+}
+
+.main {
+  flex: 1;
+  padding: 24px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+
+.addHardwareBtn {
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.addHardwareBtn:hover {
+  background-color: #3a3a3a;
+}
+
+.searchContainer {
+  position: relative;
+  width: 25%;
+  min-width: 250px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9ca3af;
+  width: 1rem;
+  height: 1rem;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 12px 16px;
+  padding-left: 40px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.searchInput:focus {
+  ring: 2px;
+  ring-color: #3b82f6;
+  border-color: transparent;
+}
+
+.tableContainer {
+  width: 100%;
+  max-width: 1124px;
+  height: 693px;
+  /* min-height: 693px;
+  max-height:693px; */
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  overflow-x: auto;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  box-sizing: border-box;
+  min-width: 800px;
+}
+
+.tableHeader {
+  background-color: #f9fafb;
+}
+
+.tableHeaderRow {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.tableHeaderCell {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  font-weight: 500;
+  color: #374151;
+  font-size: 0.875rem;
+}
+
+.tableHeaderCellCenter {
+  text-align: center;
+}
+
+.tableHeaderCellNumber {
+  width: 4rem;
+  text-align: center;
+}
+
+.tableRow {
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.tableRow:hover {
+  background-color: #f9fafb;
+}
+
+.tableCell {
+  padding: 0.75rem 1rem;
+  color: #111827;
+}
+.tableCell,
+.tableHeaderCell {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tableCellCenter {
+  text-align: center;
+}
+
+.tableCellNumber {
+  text-align: center;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.tableCellGray {
+  color: #6b7280;
+}
+
+.actionsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.actionBtn {
+  height: 2rem;
+  width: 2rem;
+  padding: 0;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.actionBtn:hover {
+  background-color: #f3f4f6;
+}
+
+.actionIcon {
+  width: 1rem;
+  height: 1rem;
+  color: #6b7280;
+}
+
+.paginationContainer {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 24px;      
+  padding-bottom: 24px;      
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.paginationItem {
+  display: flex;
+  align-items: center;
+}
+
+.paginationLink {
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.375rem;
+  text-decoration: none;
+  color: #6b7280;
+  font-size: 0.875rem;
+  border: 1px solid transparent;
+  transition: all 0.2s;
+}
+
+.paginationLink:hover {
+  background-color: #f3f4f6;
+}
+
+.paginationLinkActive {
+  background-color: black;
+  color: white;
+}
+
+.paginationEllipsis {
+  padding: 0.5rem 0.75rem;
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+
+.iconSmall {
+  width: 1rem;
+  height: 1rem;
+}
+
+/* Add Member Form container */
+.addMemberForm {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  max-width: 1124px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form fields wrapper - flex row with gap and wrap on small screens */
+.addMemberForm > div {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+/* Inputs and select styling */
+.addMemberForm input[type="text"],
+.addMemberForm input[type="email"],
+.addMemberForm select {
+  flex: 1;
+  min-width: 200px;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  outline-offset: 2px;
+  outline-color: transparent;
+  transition: outline-color 0.3s ease;
+}
+
+/* Outline highlight on focus */
+.addMemberForm input[type="text"]:focus,
+.addMemberForm input[type="email"]:focus,
+.addMemberForm select:focus {
+  outline-color: #4caf50;
+  border-color: #4caf50;
+}
+
+/* Buttons wrapper */
+.addMemberForm > div > div {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* Submit and cancel buttons */
+.addMemberForm button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+/* Add button style */
+.addMemberForm button[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+}
+
+.addMemberForm button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Cancel button style */
+.addMemberForm button[type="button"] {
+  background-color: #f44336;
+  color: white;
+}
+
+.addMemberForm button[type="button"]:hover {
+  background-color: #da190b;
+}
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.leftControls {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* adds space between Add member & other buttons */
+}
+.confirmDeleteBtn {
+  background-color: #f9fafb;
+  color: red;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: 1px solid red; 
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.cancelBtn {
+  background-color: #f9fafb;
+  color: red;
+  padding: 12px 20px;
+  border-radius: 6px;
+  border: 1px solid red; 
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+.tableContainer {
+  overflow-x: auto;
+  margin-top: 20px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tableHeader {
+  background-color: #f3f4f6;
+}
+
+.tableHeaderRow {
+  height: 50px;
+}
+
+.tableHeaderCell {
+  padding: 12px;
+  text-align: left;
+  font-weight: 600;
+}
+
+.tableCell {
+  padding: 12px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.tableCellGray {
+  color: #6b7280;
+}
+
+.tableCellCenter {
+  text-align: center;
+}
+
+.actionsContainer {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.actionBtn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.noResultFound {
+  text-align: center;
+  padding: 40px 0;
+  font-size: 18px;
+  color: #9ca3af;
+  font-weight: 600;
+}
+
+/* Top bar */
+.topBar {
+  display: flex;
+  justify-content: flex-start;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.searchInput {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  flex: 1;
+  max-width: 240px;
+}
+
+.addBtn {
+  background-color: #2563eb;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+/* Delete controls */
+.deleteControls {
+  display: flex;
+  gap: 12px;
+}
+
+.confirmDeleteBtn {
+  background-color: #f9fafb;
+  color: red;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: 1px solid red;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.cancelBtn {
+  background-color: #f9fafb;
+  color: red;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: 1px solid red;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+/* Modal */
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.modalBox {
+  width: 281px;
+  height: 249px;
+  background-color: white;
+  padding: 24px;
+  border-radius: 12px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.modalButtons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+.tableContainer {
+  overflow-x: auto;
+  margin-top: 20px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tableHeader {
+  background-color: #f3f4f6;
+}
+
+.tableHeaderRow {
+  height: 50px;
+}
+
+.tableHeaderCell {
+  padding: 12px;
+  text-align: left;
+  font-weight: 600;
+ color: black;
+  font-size: 16px;
+}
+
+.tableCell {
+  padding: 12px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.tableCellGray {
+  color: #6b7280;
+}
+
+.tableCellCenter {
+  text-align: center;
+}
+
+.actionsContainer {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.actionBtn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.noResultFound {
+  text-align: center;
+  padding: 40px 0;
+  font-size: 18px;
+  color: #9ca3af;
+  font-weight: 600;
+}
+
+/* Top bar */
+.topBar {
+  display: flex;
+  justify-content: flex-start;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.searchInput {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  flex: 1;
+  max-width: 240px;
+}
+
+.addBtn {
+  background-color: #2563eb;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+/* Delete controls */
+.deleteControls {
+  display: flex;
+  gap: 12px;
+}
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(4px);
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background-color: #ffffff;
+  width: 481px;
+  height: 249px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.iconWrapper {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #fee2e2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+margin-top:24px;
+margin-bottom:10px;
+ 
+}
+
+.iconImage {
+  width: 14px;
+  height: 14px;
+}
+
+
+.modalText {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 8px;
+  width:417px;
+  height:18px;
+  margin-top:7px;
+  margin-bottom:7px;
+}
+
+.modalTextPara {
+  font-weight: 400;
+  font-size: 14px;
+  color: #6b7280;
+  margin-top:5px;
+  margin-bottom: 24px;
+  line-height: 1.4;
+  width:417px;
+  height:42px;
+  margin-bottom:24px;
+}
+
+/* Buttons */
+.modalButtons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  
+}
+
+.cancelBtn {
+  background-color: #f9fafb;
+  color: red;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: 1px solid red;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  white-space: nowrap;
+  width:83px;
+  height:42px;
+}
+
+.confirmBtn {
+  background-color: red;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: 1px solid red;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  white-space: nowrap;
+  width:147px;
+  height:45px;
+}
+
+.customToast {
+  width: 400px !important;
+  height: 70px !important;
+  background-color: #ffffff !important; /* White background */
+  border-left: 6px solid #28a745; /* Green left border like a success ticket */
+  border-radius: 8px;
+  /* padding: 10px 16px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  color: #000;
+}
+
+.toastContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.toastTitle {
+  font-weight: 600;
+  color:black;
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+
+.toastMessage {
+  font-size: 12px;
+  font-weight: 400;
+  color: #333;
+}
+/* overlay should be relative to the page and allow scroll */
+/* Overlay Background */
+.addMemberOverlay {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
+  z-index: 999;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.addMemberModal {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 384px;
+  min-height: 100%;
+  background: white;
+  z-index: 1000;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px 20px 150px 20px; /* 👈 Bottom me 150px space */
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+
+/* Close Button */
+.closeBtn {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1001;
+}
+
+/* Header */
+.addMemberHeader {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 336px;
+}
+
+/* Body */
+.addMemberBody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Horizontal Line */
+.hr {
+  width: 336px;
+  border-top: 1px solid #ccc;
+  margin: 10px 0;
+}
+
+/* Input Group */
+.inputGroup {
+  width: 336px;
+}
+
+.inputGroup label {
+  font-size: 12px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.input {
+  height: 40px;
+  width: 100%;
+  padding: 8px 12px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Date Inputs */
+.dateInputs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+/* Button Group */
+.buttonGroup {
+  width: 336px;
+}
+
+.primaryBtn {
+  height: 45px;
+  width: 100%;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.secondaryBtn {
+  height: 45px;
+  width: 100%;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}

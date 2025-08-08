@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+     caret-color: transparent;     
+  background-color: #f7f7f8;
+  overflow-x: hidden;
+}
+
+/* Page container */
+.container {
+  display: flex;
+max-width: 1440px;
+width: 100%;
+  margin: 0 auto;
+}
+
+/* Left + Right common */
+.left, .right {
+  width: 50%;
+  box-sizing: border-box;
+
+}
+
+/* LEFT SIDE */
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 281px 163px 0 163px;
+    background-color: rgba(250, 250, 250, 1);
+
+  
+}
+
+/* Box left */
+.box {
+  width: 395px;
+  height: 448px;
+  padding-left:0px;
+  padding-right:0px;
+  padding-top:0px;
+  padding-bottom:0px;
+}
+
+/* Logo */
+.logo1 {
+width:80px;
+height:44px;
+  margin-left: 157px;
+  margin-right:157px;
+ margin-bottom:32px;
+ margin-top:0px;
+}
+
+/* Heading */
+.left h1 {
+  width: 100%;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700px;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: 0;
+  margin-bottom:14px;
+  
+
+}
+
+/* Paragraph */
+.left p {
+  width: 100%;
+  height: 12px;
+  margin-bottom:32px;
+  font-family: 'Manrope', sans-serif;
+  color: #52525B;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+/* Form */
+.formLogin {
+  width: 100%;
+  height: 192px;
+padding:0px;
+}
+
+.formLogin label {
+  width: 100%;
+  height: 14px;
+  font-family: 'Manrope', sans-serif;
+  letter-spacing: 0;
+}
+
+
+.formLogin input {
+  width: 395px;
+  height: 48px;
+  padding-left: 24px;
+margin-top:12px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+/* Login Button */
+.button {
+  width: 100%;
+  height: 44px;
+  background-color: black;
+  color: white;
+  padding: 0 176px;
+  font-weight: 600;
+  font-style: SemiBold;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Remember Me */
+.rememberMe {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  height: 16px;
+  font-family: 'Manrope', sans-serif;
+  letter-spacing: 0;
+  line-height: 100%;
+  color: #52525B;
+  margin-top: 0px;
+  margin-bottom: 32px;
+}
+
+.rememberMe input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #4842bd;
+  cursor: pointer;
+  margin: 0;
+  padding: 2px;
+  border: 1px;
+  border-radius: 4px;
+}
+
+/* RIGHT SIDE */
+.right {
+  position: relative;
+  overflow: hidden;
+  /* margin:0 auto; */
+}
+
+.rightimage img{
+  
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}

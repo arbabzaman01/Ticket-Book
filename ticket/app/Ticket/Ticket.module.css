@@ -1,0 +1,614 @@
+/* Main Page Container - Exact 1440x1024px */
+.page {
+  display: flex;
+  width: 1440px;
+  height: 1024px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  font-family: "Manrope", sans-serif;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* Right Side Content - Exact 1180px */
+.rightSide {
+  width: 1180px;
+  height: 1024px;
+  background-color: #f9fafb;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+/* Header Section - Exact 80px */
+.headerSection {
+  height: 80px;
+  min-height: 80px;
+  max-height: 80px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.headerContent {
+  width: 100%;
+  height: 100%;
+  padding: 0 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.pageTitle {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 36px;
+  color: #111827;
+  margin: 0;
+}
+
+.buttonBox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #000000;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  border: none;
+}
+
+.buttonBox:hover {
+  background-color: #1f2937;
+}
+
+.createButtonText {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+/* Tabs Section - Exact 64px */
+.tabsSection {
+  height: 64px;
+  min-height: 64px;
+  max-height: 64px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.tabsContainer {
+  width: 100%;
+  height: 100%;
+  padding: 0 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.tabsList {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  overflow-x: auto;
+  flex: 1;
+  height: 100%;
+}
+
+.tab {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  border-bottom: 2px solid transparent;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #6b7280;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+}
+
+.tab:hover {
+  color: #111827;
+}
+
+.tabActive {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  border-bottom: 2px solid #000000;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #111827;
+  cursor: pointer;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.scrollArrow {
+  color: #9ca3af;
+  font-size: 20px;
+  margin-left: 16px;
+  cursor: pointer;
+}
+
+/* Search Section - Exact 72px */
+.searchSection {
+  height: 72px;
+  min-height: 72px;
+  max-height: 72px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.searchContainer {
+  width: 100%;
+  height: 100%;
+  padding: 0 32px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.searchWrapper {
+  position: relative;
+  width: 320px;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9ca3af;
+  font-size: 16px;
+  z-index: 1;
+}
+
+.searchInput {
+  width: 100%;
+  height: 40px;
+  padding: 0 16px 0 40px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #111827;
+  background-color: #ffffff;
+  outline: none;
+  transition: border-color 0.2s ease;
+  box-sizing: border-box;
+}
+
+.searchInput:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.searchInput::placeholder {
+  color: #9ca3af;
+}
+
+/* Content Section - Flexible height (808px remaining) */
+.contentSection {
+  flex: 1;
+  background-color: #ffffff;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+/* Empty State */
+.emptyState {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.tableHeaders {
+  height: 48px;
+  min-height: 48px;
+  max-height: 48px;
+  background-color: #f9fafb;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.headerCell {
+  flex: 1;
+  padding: 0 24px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  line-height: 16px;
+}
+
+.headerCell:first-child {
+  padding-left: 32px;
+}
+
+.headerCell:last-child {
+  padding-right: 32px;
+}
+
+.emptyContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  box-sizing: border-box;
+}
+
+.emptyIllustration {
+  width: 300px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.emptyIllustration img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.emptyTitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111827;
+  margin: 0;
+}
+
+/* Table Container */
+.tableContainer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.tableBody {
+  flex: 1;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.tableRow {
+  height: 64px;
+  min-height: 64px;
+  max-height: 64px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #f3f4f6;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.tableRow:hover {
+  background-color: #f9fafb;
+}
+
+.dataCell {
+  flex: 1;
+  padding: 0 24px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #111827;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.dataCell:first-child {
+  padding-left: 32px;
+}
+
+.dataCell:last-child {
+  padding-right: 32px;
+}
+
+/* Status Badges - Exact Figma Colors */
+.statusBadge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 12px;
+  border-radius: 16px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  white-space: nowrap;
+}
+
+.awaitingArrival {
+  background-color: #fef2f2;
+  color: #dc2626;
+}
+
+.inQueue {
+  background-color: #fff7ed;
+  color: #ea580c;
+}
+
+.inQueue2 {
+  background-color: #f0fdf4;
+  color: #16a34a;
+}
+
+.inProgress {
+  background-color: #fefce8;
+  color: #ca8a04;
+}
+
+.inProgress2 {
+  background-color: #ecfeff;
+  color: #0891b2;
+}
+
+.completed {
+  background-color: #f0fdf4;
+  color: #16a34a;
+}
+
+.completed2 {
+  background-color: #f0fdf4;
+  color: #16a34a;
+}
+
+.completed3 {
+  background-color: #eff6ff;
+  color: #2563eb;
+}
+
+.completed4 {
+  background-color: #faf5ff;
+  color: #9333ea;
+}
+
+.completed5 {
+  background-color: #eef2ff;
+  color: #4f46e5;
+}
+
+/* Action Icons */
+.actionIcons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.actionIcons img {
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.2s ease;
+}
+
+.actionIcons img:hover {
+  opacity: 1;
+}
+
+/* Pagination Section - Exact 64px */
+.paginationSection {
+  height: 64px;
+  min-height: 64px;
+  max-height: 64px;
+  background-color: #ffffff;
+  border-top: 1px solid #e5e7eb;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.paginationContainer {
+  width: 100%;
+  height: 100%;
+  padding: 0 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.paginationLeft,
+.paginationRight {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.paginationText {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #6b7280;
+}
+
+.paginationArrow {
+  color: #9ca3af;
+  font-size: 16px;
+}
+
+.paginationCenter {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pageButton {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #6b7280;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+}
+
+.pageButton:hover {
+  background-color: #f3f4f6;
+}
+
+.pageButtonActive {
+  width: 32px;
+  height: 32px;
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.paginationDots {
+  color: #9ca3af;
+  font-size: 14px;
+  padding: 0 4px;
+}
+
+/* Scrollbar Styling */
+.tableBody::-webkit-scrollbar {
+  width: 6px;
+}
+
+.tableBody::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+.tableBody::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+.tableBody::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Responsive */
+@media (max-width: 1440px) {
+  .page {
+    width: 100%;
+    max-width: 1440px;
+  }
+}
+
+.paginationFixEmpty {
+  margin-top: 20px;
+  padding: 0 32px;
+}
+
+.paginationFixData {
+  margin-top: 20px;
+  padding: 0 32px;
+}
+
+
+.emptyState {
+  height: 434px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin: 0 32px;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+}
+
+.emptyContent {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 24px;
+  background-color: #ffffff;
+}
+.paginationNoData {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;   /* 20px gap from white box */
+  padding-right: 32px;
+  gap: 10px;
+}
+
+.pageBtn {
+  font-size: 14px;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: transparent;
+  color: #666;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+
+.pageBtn:last-child {
+ color: black;
+  font-weight: 600;
+}
+
+
+.paginationFix {
+  margin-top: 20px;
+  padding: 0 32px;
+}
+
+/* Already used for normal data pagination */
+.paginationFixData {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 32px;
+  margin-top: 20px;
+  background-color: #fff; /* Match table background if needed */
+}
+
+
+.paginationNoData {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 32px;
+  margin-top: 20px;
+  background-color: #fff;
+}

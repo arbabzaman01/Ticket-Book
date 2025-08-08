@@ -1,0 +1,53 @@
+.paginationContainer {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 24px;      
+  padding-bottom: 24px;      
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.paginationItem {
+  display: flex;
+  align-items: center;
+}
+
+.paginationLink {
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.375rem;
+  text-decoration: none;
+  color: #6b7280;
+  font-size: 0.875rem;
+  border: 1px solid transparent;
+  transition: all 0.2s;
+}
+.paginationLinkNav {
+  color: black;
+  font-weight: 600;
+}
+
+
+.paginationLink:hover {
+  background-color: #f3f4f6;
+}
+
+.paginationLinkActive {
+  background-color: black;
+  color: white;
+}
+
+.paginationEllipsis {
+  padding: 0.5rem 0.75rem;
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+
+.iconSmall {
+  width: 1rem;
+  height: 1rem;
+}
