@@ -1,7 +1,6 @@
 {
-<<<<<<< HEAD
   "name": "ticket",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
@@ -25,18 +24,5 @@
     "eslint-config-next": "15.3.4",
     "tailwindcss": "^4",
     "typescript": "^5"
-=======
-  "name": "ticket-app",
-  "version": "1.0.0",
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
-  },
-  "dependencies": {
-    "next": "latest",
-    "react": "latest",
-    "react-dom": "latest"
->>>>>>> cfd23e3bd7e8478d5fc9795976f6335f08c4cd82
   }
 }
